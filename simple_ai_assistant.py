@@ -9,25 +9,36 @@ base_url = os.getenv("OPENAI_BASE_URL")
 api_key = os.getenv("OPENAI_API_KEY")
 model = os.getenv("OPENAI_MODEL")
 
+client = OpenAI(base_url=base_url, api_key=api_key)
+
 message = []
+
+message.append(
+    {
+        "role" : "system",
+        "content": "You are a helpful assistant."
+    }
+)
 
 while True:
 
     user_input = input("You: ")
 
-    message.append(
-            {
-                "role" : "user",
-                "content": user_input
-            }
-        )
+   
 
     if user_input.lower() in ["exit", "quit"]:
         print("Exiting the assistant.")
         break
 
+    message.append(
+        {
+            "role" : "user",
+            "content": user_input
+        }
+    )
+
     try:
-        client = OpenAI(base_url=base_url, api_key=api_key)
+        
         response = client.chat.completions.create(
             model=model,
             messages=message
