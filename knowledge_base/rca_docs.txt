@@ -1,0 +1,36 @@
+# Engineering Incident Management and Root Cause Analysis (RCA) Framework
+
+## 1. Purpose and Philosophy
+Reliability, availability, and software integrity are cornerstones of our engineering commitments. This document establishes the standard operating procedure for Incident Management, Blameless Post-Mortems, and Root Cause Analysis (RCA). The core philosophy of our engineering post-mortem culture is strictly blameless: we operate on the fundamental premise that human beings make mistakes within complex distributed systems. Our goal is never to assign individual fault, but rather to identify structural, procedural, technical, and architectural vulnerabilities and eliminate failure modes permanently.
+
+## 2. Incident Classification and Severity Levels
+Production incidents are categorized across four distinct severity levels to determine escalation protocols, incident commander assignments, and operational recovery timelines:
+- SEV-1 (Critical System Outage): Catastrophic failure causing complete core platform unavailability, critical customer financial loss, severe data corruption, or major security breach affecting a substantial percentage of users. Response SLA: 5 minutes. Update cadence: Every 15 minutes.
+- SEV-2 (Major Feature Degraded): High-impact operational degradation where a significant user-facing workflow is completely broken (e.g., checkout failures, authentication timeouts, payment gateway disruption), with no immediate workaround. Response SLA: 15 minutes. Update cadence: Every 30 minutes.
+- SEV-3 (Moderate Operational Issue): Minor functionality impairment, slow query performance, internal administrative tooling failure, or localized issue with an available workaround. Response SLA: 1 hour. Update cadence: Every 2 hours.
+- SEV-4 (Low Impact Glitch): Minor cosmetic bugs, non-critical telemetry failures, or non-blocking issues. Handled during normal sprint backlogs.
+
+## 3. Incident Lifecycle and War Room Protocols
+When a SEV-1 or SEV-2 incident triggers through automated telemetry alerts (e.g., Datadog, PagerDuty), the On-Call Site Reliability Engineer assumes the role of Incident Commander (IC). The IC establishes a dedicated incident war room on our communications platform and delegates clear responsibilities:
+1. Incident Commander (IC): Leads the triage, coordinates debugging efforts, delegates remediation actions, and maintains focus on service restoration.
+2. Communications Lead: Publishes continuous updates on the customer-facing status page, sends stakeholder briefings, and handles customer support alignment.
+3. Operations Lead: Executes system rollbacks, traffic rerouting, database failovers, or configuration changes under the IC's guidance.
+The primary directive during an active incident is rapid Time to Mitigation (TTM), rather than exhaustive root-cause investigation. Deep investigation takes place once production stability is restored.
+
+## 4. Root Cause Analysis (RCA) Methodology
+Within forty-eight hours of incident resolution, the primary engineering team responsible for the impacted service must convene a formal RCA session using recognized diagnostic methodologies:
+- The 5 Whys Analysis: Repeatedly asking "Why" across multiple failure layers until foundational architectural flaws or process omissions are uncovered. (e.g., Why did checkout fail? Database was unresponsive. Why? Database connection pool was exhausted. Why? Unindexed query consumed all connections. Why? Code review missed query execution plan analysis. Why? Lacked automated CI linting for query explain plans.)
+- Ishikawa / Fishbone Diagramming: Categorizing contributing factors into categories including Architecture, Configuration, Testing, Monitoring, Infrastructure, and Process.
+- Timeline Reconstruction: A rigorous chronological timeline detailing when the triggering change was merged, deployed, detected, escalated, mitigated, and permanently resolved.
+
+## 5. Standard RCA Document Structure
+Every finalized post-mortem must be documented in our engineering knowledge wiki following this mandatory template:
+1. Executive Summary: High-level overview detailing customer impact, duration, and core cause.
+2. Key Metrics: Time to Detect (TTD), Time to Acknowledge (TTA), Time to Mitigate (TTM), Total Outage Duration, and Impacted User Volume.
+3. Chronological Incident Timeline: Exact timestamps with corresponding actions and system state.
+4. Deep Technical Root Cause: In-depth code snippets, architectural diagrams, architectural bottlenecks, or configuration diffs that triggered failure.
+5. Trigger Event vs Root Cause Distinction: Explaining the proximate trigger (e.g., sudden traffic spike) versus the underlying structural flaw (e.g., lack of rate limiting).
+6. Corrective and Preventive Actions (CAPA): Actionable, prioritized tasks assigned to specific engineers with strict completion deadlines (P0 actions must be closed within 7 business days; P1 within 30 days).
+
+## 6. Review and Knowledge Sharing
+The finalized RCA document is reviewed during the bi-weekly Engineering Reliability Forum. Insights are shared across engineering squads to ensure systemic learnings are applied company-wide, preventing identical anti-patterns from recurring in other distributed systems.

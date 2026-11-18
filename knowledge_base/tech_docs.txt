@@ -1,0 +1,32 @@
+# Enterprise Engineering Standards, Architecture, and Development Guidelines
+
+## 1. Architectural Principles and Design Philosophy
+Our software engineering ecosystem is built upon resilient, scalable, distributed microservices architecture designed to maintain high availability, performance, and maintainability. Engineering teams must adhere to standard architectural principles:
+- Loose Coupling and High Cohesion: Services must be domain-centric, encapsulated within clear business boundaries, and interact exclusively through well-defined APIs. Direct cross-database access across service boundaries is strictly prohibited.
+- Single Responsibility Principle (SRP): Each microservice must own its domain data model, business logic, and database schemas independently.
+- Resiliency by Design: Distributed systems must anticipate network latency, service outages, and hardware degradation. Implement standard fault-tolerant patterns, including exponential backoff retries with jitter, circuit breakers, dead-letter queues (DLQs), and graceful feature degradation.
+- Zero-Trust Security: Every inter-service request, whether internal or external, must undergo mutual TLS (mTLS) encryption, token authentication, and strict authorization validation.
+
+## 7. API Design Standards and Contracts
+Consistent, intuitive, and secure APIs are vital for seamless integration across mobile applications, web portals, and third-party partner integrations:
+- RESTful Conventions: Use standard HTTP verbs (GET, POST, PUT, PATCH, DELETE) accurately reflecting idempotent vs non-idempotent operations. Return appropriate HTTP status codes (e.g., 200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 429 Too Many Requests, 500 Internal Error).
+- API Versioning: All exposed APIs must specify version prefixes in the URL path (e.g., `/api/v1/users`). Deprecation of endpoints requires a minimum six-month transition timeline with clear communication and runtime deprecation headers.
+- gRPC for High-Throughput Inter-Service Communication: Low-latency, high-volume internal service-to-service communication must utilize gRPC with Protocol Buffers (protobuf) to ensure binary serialization, bidirectional streaming, and schema validation.
+- OpenAPI / Swagger Specifications: Every service must automatically generate and publish synchronized OpenAPI v3 documentation through automated build pipelines.
+
+## 3. Git Workflow, Branching Strategy, and Code Quality
+We follow an adapted Trunk-Based Development model to ensure rapid integration and continuous delivery:
+- Branching Conventions: Developers branch directly from `main` using descriptive naming patterns: `feature/JIRA-123-short-description`, `bugfix/JIRA-456-fix-issue`, or `hotfix/JIRA-789-critical-fix`. Long-lived feature branches are strongly discouraged.
+- Pull Request (PR) Requirements: PRs must remain under 400 lines of code change to ensure thorough, focused review. Every PR requires at least two approving peer reviews from designated code owners, passing automated unit test suites, zero static security analysis (SAST) vulnerabilities, and verified branch build status before merge.
+- Automated Testing Thresholds: Codebases must maintain a minimum of eighty percent automated test coverage encompassing unit tests, service integration tests, and critical contract validation suites.
+
+## 4. Continuous Integration and Continuous Deployment (CI/CD)
+Our CI/CD pipelines automate build verification, container security scanning, testing, and deployment:
+- Automated Verification: Upon opening a PR, the CI runner compiles code, executes unit and integration tests, evaluates code formatting via linters, and conducts dependency vulnerability scans (e.g., Snyk, SonarQube).
+- Containerization: Applications are packaged into lightweight, secure Docker container images based on minimal Alpine or distroless base images. Containers must run as non-root users and be tagged with immutable git commit hashes.
+- Deployment Pipelines: Deployments progress automatically from Development to Staging environments. Production releases utilize Canary or Blue-Green deployment patterns with automated metric evaluation (error rate, P99 latency thresholds). Deployments automatically roll back if anomaly detection thresholds are triggered.
+
+## 5. Observability, Telemetry, and Secrets Management
+Software cannot be maintained without comprehensive observability:
+- The Three Pillars of Observability: Every microservice must implement Structured JSON Logging with standardized correlation IDs (`trace_id`, `span_id`), emit dimensional business and infrastructure metrics (Prometheus/StatsD), and export OpenTelemetry distributed traces.
+- Centralized Secrets Management: Hardcoding API keys, passwords, database credentials, or encryption certificates into source code or Git repositories is a critical security violation. All secrets must be dynamically injected via enterprise secrets vaults (e.g., HashiCorp Vault, AWS Secrets Manager) as runtime environment variables.

@@ -1,0 +1,31 @@
+# Human Resources Operations, Code of Conduct, and Workplace Guidelines
+
+## 1. Scope, Purpose, and Guiding Ethics
+This document outlines the overarching Human Resources operational framework and mandatory Code of Conduct governing all employees, contractors, interns, and executives within the organization. We are dedicated to cultivating a professional, inclusive, transparent, and legally compliant workplace environment that protects individual dignity, encourages personal and professional growth, and maintains the highest standards of integrity, mutual respect, and corporate responsibility.
+
+## 2. Workplace Code of Conduct and Professional Integrity
+Every employee represents the brand, values, and reputation of the company. As representatives of the organization, all staff members are expected to conduct themselves with ethical diligence, honesty, and professional courtesy at all times:
+- Anti-Harassment and POSH Compliance: The company enforces zero tolerance for sexual harassment, discriminatory behavior, bullying, or verbal abuse of any nature. We strictly follow the Prevention of Sexual Harassment (POSH) framework. An Internal Complaints Committee (ICC) oversees, investigates, and resolves grievances within strict statutory confidentiality and timelines.
+- Diversity, Equity, and Inclusion (DEI): Employment decisions—including recruitment, compensation, promotions, project assignments, and training opportunities—are based purely on merit, performance, and business requirements, without regard to gender, race, religion, caste, sexual orientation, disability, or age.
+- Conflict of Interest and Moonlighting: Employees must not engage in secondary commercial employment, freelancing, or advisory roles with competing entities that could conflict with company duties. Any personal investments or familial associations with vendors or clients must be disclosed to the HR Compliance Officer.
+
+## 3. Working Hours, Hybrid Workplace Model, and Attendance
+Our organization recognizes the importance of work-life balance and operates on a flexible 40-hour weekly work schedule:
+- Standard Working Hours: Core operational hours are Monday through Friday, 9:30 AM to 6:30 PM, including a designated one-hour lunch and rest interval. Teams are expected to be available for synchronous collaboration during core hours from 11:00 AM to 5:00 PM.
+- Hybrid Work Model: Employees are required to work from their designated base office for a minimum of three mandatory days per week (Tuesday through Thursday), with optional remote work flexibility on Mondays and Fridays. Department heads maintain discretion to request on-site attendance during critical releases, client audits, or strategic planning offsites.
+- Attendance Logging: Employees must record daily attendance, check-ins, and leave requests via the employee self-service HRMS mobile application or web portal. Unexplained absences exceeding three consecutive days without manager communication are treated as unauthorized absence and invite disciplinary inquiry.
+
+## 4. Performance Management, Continuous Feedback, and OKRs
+We practice an outcome-driven Performance Management System built around Objectives and Key Results (OKRs) and Key Performance Indicators (KPIs):
+- Goal Setting: At the start of each fiscal quarter, employees collaborate with direct managers to align individual OKRs with broader team milestones and organizational roadmaps.
+- Mid-Year and Annual Appraisal Cycles: A mid-year check-in occurs in September to assess milestone velocity, re-calibrate targets, and discuss professional growth. The comprehensive annual performance review takes place in March, incorporating 360-degree peer feedback, self-evaluations, and direct manager assessments.
+- Performance Improvement Plans (PIP): Employees who consistently fall short of required role competencies receive structured coaching and a formal 60-day Performance Improvement Plan detailing measurable deliverables and weekly milestone reviews.
+
+## 5. Information Security, Data Privacy, and Intellectual Property
+Employees have access to proprietary software, customer data, and trade secrets. Strict compliance with corporate information security standards is mandatory:
+- Confidentiality Obligations: All source code, product specifications, customer details, financial data, and business strategies are strictly confidential. Dissemination of proprietary information outside authorized enterprise systems is a grave breach of contract.
+- Intellectual Property Assignment: All intellectual property, patents, source code, documentation, and inventions created by employees during their tenure using company resources belong solely and exclusively to the company.
+- Social Media and External Communications: Employees must not speak publicly on behalf of the organization to news media, press, or public forums without explicit written authorization from the Corporate Communications Director.
+
+## 6. Employee Grievance Redressal and Disciplinary Actions
+We maintain an open-door policy encouraging candid discussions between team members and leadership. When informal resolutions fail, employees may register formal grievances via the confidential HR Ethics Helpline. Violations of company policies, unauthorized data disclosures, insubordination, or repeated ethical breaches trigger formal disciplinary proceedings, which may include formal written warnings, suspension of bonuses, withholding of promotions, or immediate termination of employment for cause.

@@ -1,0 +1,26 @@
+# Standard Corporate Hiring and Talent Acquisition Process
+
+## 1. Overview and Objective
+The objective of this Talent Acquisition Policy is to establish a transparent, objective, and merit-based recruitment framework. This framework ensures that our organization attracts, assesses, and hires high-caliber candidates aligned with our technical expectations, corporate values, and long-term organizational goals. All hiring managers, talent acquisition specialists, and interview panelists are strictly required to adhere to these standardized procedures to maintain fairness, minimize hiring bias, and deliver a positive candidate experience.
+
+## 2. Headcount Requisition and Job Profiling
+Every recruitment journey originates with an approved Job Requisition Form (JRF) in our internal Human Resource Management System (HRMS). Hiring managers must define the specific business need, key performance indicators (KPIs), necessary technical competencies, seniority level, and educational qualifications before initiating hiring. The Talent Acquisition (TA) team reviews the requisition, checks budget allocation against the approved annual headcount forecast, and finalizes the comprehensive Job Description (JD). The JD is then published across approved recruitment platforms, including LinkedIn Talent Hub, internal job boards, and designated recruitment partner agencies.
+
+## 3. Sourcing and Initial Candidate Screening
+Candidate sourcing occurs through diverse recruitment channels: internal job postings (IJP), employee referral schemes, direct applicant pools, campus placement drives, and outbound recruiter sourcing. Sourced profiles undergo initial screening by the TA partner within forty-eight hours of receipt. Screening criteria focus on relevant industry experience, technical domain match, educational background, notice period feasibility, and compensation expectations. Candidates meeting minimum eligibility criteria participate in a preliminary phone screening covering career motivations, communication fluency, and location preferences.
+
+## 4. Multi-Stage Assessment and Interview Architecture
+Qualified candidates proceed through a structured four-stage evaluation pipeline designed to gauge technical depth, cognitive problem-solving, and culture compatibility:
+1. Online Technical Assessment: Software engineering and data candidates complete a 90-minute proctored programming assessment on our designated platform. The test evaluates data structures, algorithmic efficiency, clean code principles, edge-case coverage, and debugging acumen. Candidates must achieve a score of at least seventy-five percent to advance.
+2. Technical Round 1 (Hands-on Systems & Core Concepts): A 60-minute technical interview conducted by a senior engineer. This round explores low-level architecture, language fundamentals, database design, indexing strategies, API architecture, and real-time live coding exercises.
+3. Technical Round 2 (System Design & Scalability): A 60-minute session with a Lead Architect or Engineering Manager. This discussion focuses on distributed architecture, horizontal scaling, caching mechanisms, messaging queues, event-driven microservices, fault tolerance, and security standards.
+4. Behavioral and Leadership Alignment: Led by the Director of Engineering and Senior HR Business Partner, this round utilizes the STAR (Situation, Task, Action, Result) methodology to evaluate teamwork, conflict resolution, ownership, stakeholder communication, and adaptability.
+
+## 5. Candidate Evaluation and Panel Debrief
+Interview panelists must submit comprehensive written feedback into the recruitment portal within twelve hours of interview completion. Objective scorecards evaluate problem solving, technical depth, communication, and team culture on a standard 1-to-5 rating scale. A debrief meeting is conducted if there are mixed evaluations, ensuring a unanimous or consensus-driven decision before extending an offer.
+
+## 6. Offer Approval, Compensation Structuring, and Rollout
+Once candidate selection is confirmed, the TA team prepares a formal compensation proposal based on external market benchmarks, candidate experience, internal parity guidelines, and annual compensation bands. The offer packet requires formal approvals from the Hiring Manager, Finance Head, and Human Resources Director. Upon approval, a formal Offer Letter detailing base pay, variable bonus, provident fund, insurance benefits, equity grants (ESOPs), and joining date is issued with a standard five-business-day validity.
+
+## 7. Background Verification (BGV) and Pre-Onboarding
+Pre-employment background verification is mandatory for all prospective employees and is executed through our verified third-party background screening partner. Verification scope includes educational credential authentication, previous employment tenure validation, criminal record history checks, identity validation via government registries, and professional reference reviews from direct reporting managers. Adverse findings or deliberate misrepresentations result in immediate revocation of the offer. Simultaneously, the IT operations and administrative teams provision laptop hardware, company email accounts, security tokens, and enterprise workspace access before the candidate's first day.

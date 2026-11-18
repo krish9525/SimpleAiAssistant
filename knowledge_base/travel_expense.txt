@@ -1,0 +1,33 @@
+# Corporate Travel and Business Expense Reimbursement Policy
+
+## 1. Objective and Core Scope
+The purpose of the Corporate Travel and Business Expense Reimbursement Policy is to establish clear operational guidelines and financial ceilings for employees undertaking authorized business travel. The policy ensures that employees travel comfortably and safely while exercising prudent financial responsibility and fiscal stewardship on behalf of the company. This policy applies to all domestic and international business trips, client meetings, industry conferences, offsites, and business development initiatives.
+
+## 2. Pre-Travel Approval and Requisition
+Prior to incurring any commercial travel expenses, employees must submit a formal Travel Request Form (TRF) through the enterprise ERP portal at least fourteen calendar days prior to planned domestic departure, and thirty days prior to international travel. The request must detail travel dates, business purpose, destination, anticipated expenditure breakdown, and client or project billability. Travel cannot be booked without explicit approval from the Department Head and Finance Controller.
+
+## 3. Air Travel, Rail, and Local Conveyance Guidelines
+Employees are expected to plan journeys in advance to take advantage of corporate discount arrangements and reasonable airfares:
+- Domestic Air Travel: Standard domestic flights are booked in Economy Class via the corporate travel management portal. Flights must be scheduled on the most direct and economical route. Business Class domestic flights are strictly reserved for Executive Vice Presidents and above, or flights exceeding six hours of continuous flight time.
+- Rail Travel: For journeys under six hours or where air connectivity is impractical, train bookings in AC Tier-2 or AC Executive Chair Class are permissible.
+- Local Ground Transportation: For transit to and from airports or client sites, employees should use metered app-based cab aggregators (e.g., Uber, Ola) or prepaid airport taxis. Personal car usage for authorized business transit is reimbursed at an established standard mileage rate of INR 10 per kilometer for four-wheelers and INR 5 per kilometer for two-wheelers, upon submitting route logs and odometer readings. Rental car bookings require prior managerial approval.
+
+## 4. Hotel Accommodation and City Tiering
+Hotel lodging allowances are categorized according to destination economic tiers:
+- Tier-1 Metro Cities (Mumbai, Delhi-NCR, Bengaluru, Hyderabad, Chennai, Kolkata): Maximum lodging reimbursement allowance is capped at INR 6,000 plus applicable taxes per night.
+- Tier-2 and Other Cities (Pune, Ahmedabad, Jaipur, Chandigarh, Kochi, etc.): Maximum lodging allowance is capped at INR 4,000 plus applicable taxes per night.
+- Corporate Bookings: Wherever feasible, employees must reserve rooms through preferred corporate hotel chains that provide bundled breakfast, high-speed Wi-Fi, and corporate discount billings. Staying at luxury five-star suites is prohibited unless pre-authorized by the Chief Financial Officer.
+
+## 5. Daily Meal Allowance (Per Diem) and Incidental Expenses
+Employees on active business travel are entitled to daily meal allowances to cover food and beverages:
+- Daily Meal Ceiling (Per Diem): Employees can claim actual meal expenditures up to INR 1,500 per day for domestic travel. For international journeys, per diem allowances are determined based on destination country tiers (e.g., USD 75/day for North America and Western Europe, USD 50/day for Southeast Asia).
+- Itemized Invoicing: Meal expenses must be supported by itemized commercial food receipts showing restaurant name, date, and tax details. Alcoholic beverages, mini-bar expenses, personal entertainment, and tobacco products are non-reimbursable and will be rejected.
+
+## 6. Client Entertainment and Business Meals
+When an employee hosts clients or external business prospects for dinner or lunch, the expense must be pre-approved by the Sales Director or Practice Head. The reimbursement claim must clearly state the business purpose, company affiliation, and names of all dining attendees. Client entertainment claims are processed separately from individual travel per diem allowances.
+
+## 7. Expense Submission, Verification, and Reimbursement Timelines
+Timely submission of expense reports is critical for accounting reconciliation:
+- Submission Window: Employees must compile, scan, and submit their complete expense report with all supporting original invoices via the ERP Expense Portal within fifteen calendar days of concluding travel.
+- Audit and Approval: The Finance and Accounts team audits claims against policy ceilings, currency exchange conversions, and invoice validity.
+- Reimbursement Cycle: Verified and approved claims are credited directly into the employee's designated salary bank account during the subsequent semi-monthly payroll disbursement cycle. Expense claims submitted after forty-five days from travel completion will be rejected, unless accompanied by documented executive exception approval.
